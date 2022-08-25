@@ -1,0 +1,623 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.member_table {
+  width: 100%;
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.member_container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.member_container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  background-color: rgb(50, 50, 50);
+  border-radius: 10px;
+}
+
+.member_container::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(60, 60, 60);
+}
+
+.member_container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.83);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(60, 60, 60);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.83);
+}
+
+#cover {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 1;
+}
+
+#progress-bar {
+  width: 50%;
+  height: 5px;
+  background-color: #222;
+}
+
+#meter {
+  width: 0;
+  height: 5px;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+#error-msg {
+  font-size: 22px;
+}
+
+#refresh {
+  border-radius: 50%;
+  background-color: rgb(60, 60, 60);
+  color: rgba(255, 255, 255, 0.8);
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 0 0;
+  padding: 4px 0 0 0;
+  cursor: pointer;
+  border: none;
+}
+#refresh:hover {
+  background-color: rgba(60, 60, 60, 0.8);
+}
+
+#main-container {
+  overflow-y: hidden;
+  background-image: linear-gradient(to top, black, transparent);
+}
+#main-container:hover {
+  scrollbar-color: rgb(30, 30, 30) black !important;
+}
+#main-container:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 30);
+}
+
+  .banner {
+    padding: 0 0 0 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .banner div:nth-child(1) {
+    filter: brightness(35%);
+    transition: 0.2s;
+  }
+  .banner:hover div:nth-child(1) {
+    filter: brightness(70%);
+    transition: 0.2s;
+    color: white;
+  }
+  .banner > .desktop {
+    width: 100px;
+    height: 800px;
+    box-shadow: inset 0 -800px 800px -500px rgba(0, 0, 0, 0.8);
+    background-size: cover;
+  }
+  .banner > .mobile {
+    width: 100vw;
+    height: 25vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .banner > .mobile-shadow {
+    box-shadow: inset 100px 0px 90px -90px rgba(0, 0, 0, 0.8), inset -100px 0px 90px -90px rgba(0, 0, 0, 0.8);
+  }
+  
+  .main-name {
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+  }
+  
+  .vertical-text {
+    text-decoration: none;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 0;
+  }
+  .vertical-text.desktop {
+    -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+
+  #pplg {
+    background-image: url("/tumbal/Gambar\ Ghazi.jpg");
+  }
+  #pplg.desktop-pos {
+    background-position: 53.7%;
+  
+  }
+  #pplg.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg2 {
+    background-image: url("/tumbal/Gambar\ Erfin.jpg");
+    
+  }
+  #pplg2.desktop-pos {
+    background-position: 27%;
+  }
+  #pplg2.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg2 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg2 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg3 {
+    background-image: url("/tumbal/Gambar\ Randy.jpeg");
+  }
+  #pplg3.desktop-pos {
+    background-position: 57%;
+  }
+  #pplg3.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg3 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg3 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg4 {
+    background-image: url("/tumbal/Gambar\ Rafi.jpeg");
+  }
+  #pplg4.desktop-pos {
+    background-position: 67%;
+  }
+  #pplg4.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg4 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg4 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg5 {
+    background-image: url("/tumbal/Gambar\ Salwa.jpeg");
+  }
+  #pplg5.desktop-pos {
+    background-position: 57%;
+  }
+  #pplg5.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg5 ~ .main-name > .desktop {
+    font-size: 19px;
+    font-weight: 700;
+  }
+  #pplg5 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg6 {
+    background-image: url("/tumbal/Gambar\ Afni.jpeg");
+  }
+  #pplg6.desktop-pos {
+    background-position: 50%;
+  }
+  #pplg6.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg6 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg6 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg7 {
+    background-image: url("/tumbal/Gambar\ Nadya.jpeg");
+  }
+  #pplg7.desktop-pos {
+    background-position: 28%;
+  }
+  #pplg7.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg7 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg7 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg8 {
+    background-image: url("/tumbal/Gambar\ Irfa.jpeg");
+  }
+  #pplg8.desktop-pos {
+    background-position: 20%;
+  }
+  #pplg8.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg8 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg8 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg9 {
+    background-image: url("/tumbal/Gambar\ Irfan.jpeg");
+  }
+  #pplg9.desktop-pos {
+    background-position: 50%;
+  }
+  #pplg9.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg9 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg9 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg10 {
+    background-image: url("/tumbal/Gambar\ Aldi.jpeg");
+  }
+  #pplg10.desktop-pos {
+    background-position: 53%;
+  }
+  #pplg10.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg10 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg10 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg11 {
+    background-image: url("/tumbal/Gambar\ Luthfi.jpeg");
+  }
+  #pplg11.desktop-pos {
+    background-position: 58%;
+  }
+  #pplg11.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg11 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg11 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg12 {
+    background-image: url("/tumbal/Gambar\ Fauzi.jpeg");
+  }
+  #pplg12.desktop-pos {
+    background-position: 49%;
+  }
+  #pplg12.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg12 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg12 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg13 {
+    background-image: url("/tumbal/Gambar\ Rizal.jpeg");
+  }
+  #pplg13.desktop-pos {
+    background-position: 46%;
+  }
+  #pplg13.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg13 ~ .main-name > .desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #pplg13 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg14 {
+    background-image: url("/tumbal/Gambar\ Wifi.jpeg");
+  }
+  #pplg14.desktop-pos {
+    background-position: 38.7%;
+  }
+  #pplg14.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg14 ~ .main-name > .desktop {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  #pplg14 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  #pplg15 {
+    background-image: url("/tumbal/Gambar\ Ziyad.jpeg");
+  }
+  #pplg15.desktop-pos {
+    background-position: 62.7%;
+  }
+  #pplg15.mobile-pos {
+    transform-origin: top center;
+    transform: scale(16) translate(33.5%, -16%);
+  }
+  #pplg15 ~ .main-name > .desktop {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  #pplg15 ~ .main-name > .mobile {
+    font-size: 7vw;
+    font-weight: 700;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .fh-center {
+    justify-content: center;
+  }
+  
+  .fv-center {
+    align-items: center;
+  }
+  
+  .f-col {
+    flex-direction: column;
+  }
+  
+  .f-row {
+    flex-direction: row;
+  }
+  
+  .pos-abs {
+    position: absolute;
+  }
+  
+  .pos-rel {
+    position: relative;
+  }
+  
+  .overflow-hide {
+    overflow: hidden;
+  }
+  
+  .no-display {
+    display: none !important;
+  }
+  
+
+main {
+  background-color: rgba(0, 0, 0, 0.83);
+}
+
+footer {
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.75));
+  flex-grow: 2;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0 0 0;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 0 0 0;
+  line-height: 40px;
+}
+
+td, th, #about table th {
+  background: center/cover;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  font-size: 20px;
+}
+
+tr {
+  height: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+tr:last-child:not(thead tr) {
+  border-bottom: unset;
+}
+
+#close {
+  visibility: hidden;
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  z-index: 1;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+#close .material-icons {
+  font-size: 35px;
+}
+#close:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#goToTop {
+  visibility: hidden;
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(60, 60, 60);
+  color: rgba(255, 255, 255, 0.8);
+  width: 50px;
+  height: 50px;
+  padding: 5px 0 0 0;
+}
+#goToTop .material-icons {
+  font-size: 35px;
+}
+#goToTop:hover {
+  background-color: rgba(60, 60, 60, 0.8);
+}
+
+li {
+  margin: 0 0 10px 15px;
+  list-style: initial;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.fade-in-up {
+  -webkit-animation: fadeinup 2s;
+          animation: fadeinup 2s;
+}
+
+@-webkit-keyframes fadeinup {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinup {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.fade-in-down {
+  -webkit-animation: fadeindown 2s;
+          animation: fadeindown 2s;
+}
+
+@-webkit-keyframes fadeindown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeindown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

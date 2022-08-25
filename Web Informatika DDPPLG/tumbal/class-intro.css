@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    max-width: 10000px;
+  }
+
+.members__banner {   
+    background-image: url(/tumbal/members_banner.jpg);
+    background-position-y: 70%;
+    height: 200px;
+}
+
+.section__members--intro {
+    font-family: var(--ff-primary);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--clr-light);
+    padding-top: 1em;
+}
+
+.lessons__intro-text {
+    padding-top: .2em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--clr-light);
+    font-weight: 600;
+}
